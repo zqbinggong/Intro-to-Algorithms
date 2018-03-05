@@ -19,44 +19,11 @@ public class ArraySorts {
 			int q = (r+p)/2;
 			mergeSort(arr,p,q);
 			mergeSort(arr,q+1,r);
-//			merge(arr,p,q,r);	
-			merge2(arr,p,q,r);
+			merge(arr,p,q,r);	
 		}
 	
 		
 	}
-	private static void merge2(int[] arr, int p, int q, int r) {
-		// 使用一个数组来储存两个子数组
-		int n1 = q-p+1;
-		int n2 = r-q;
-		int[] temp = new int[n1+n2];
-		int i = 0,j = 0, k = 0;
-		//将子数组中数按从小到大的顺序加入temp中,直到一个子数组被取完
-		while(i < n1 && j < n2){
-			if(arr[p+i] <= arr[q+1+j]){
-				temp[k++] = arr[p+i];
-				i++;
-			}else{
-				temp[k++] = arr[q+1+j];
-				j++;
-			}
-		}
-		//找到未被取完的子数组，将剩下的数直接按顺序加入temp中
-		while(i < n1){
-			temp[k++] = arr[p+i];
-			i++;
-		}
-		while(j < n2){
-			temp[k++] = arr[q+j+1];
-			j++;
-		}
-		//将temp复制到arr中
-		for(int x = 0; x < n1+n2; x++)
-			arr[p+x] = temp[x];
-		
-		
-	}
-
 	//归并排序中的合并操作
 	private static void merge(int[] arr, int p, int q, int r) {
 		// TODO Auto-generated method stub

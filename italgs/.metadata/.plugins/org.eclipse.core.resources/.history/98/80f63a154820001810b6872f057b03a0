@@ -31,7 +31,7 @@ public class ArraySorts {
 		int n2 = r-q;
 		int[] temp = new int[n1+n2];
 		int i = 0,j = 0, k = 0;
-		//将子数组中数按从小到大的顺序加入temp中,直到一个子数组被取完
+		//将子数组中数按从小到大的顺序加入temp中
 		while(i < n1 && j < n2){
 			if(arr[p+i] <= arr[q+1+j]){
 				temp[k++] = arr[p+i];
@@ -41,7 +41,6 @@ public class ArraySorts {
 				j++;
 			}
 		}
-		//找到未被取完的子数组，将剩下的数直接按顺序加入temp中
 		while(i < n1){
 			temp[k++] = arr[p+i];
 			i++;
