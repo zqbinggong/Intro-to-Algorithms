@@ -1,0 +1,21 @@
+
+public class ArrayDemo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr = new int[]{1,4,7,33,6,8,3,9,55,88,66,123,5,111,222};
+		ArraySorts.mergeSort(arr,0,arr.length -1);
+		for(int i = 0; i < arr.length; i++){
+			System.out.print(arr[i]+"\t");
+		}
+		
+		
+//		System.out.println(ArraySorts.inversionCount(arr, 0, arr.length-1));
+		
+	}
+	
+
+}

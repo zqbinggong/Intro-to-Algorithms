@@ -1,0 +1,129 @@
+
+public class ArraySorts {
+	static int i,j,q,key;
+	
+	//插入排序
+	public static void InsertSort(int[] arr){
+		for(i = 1; i < arr.length; i++){
+			key = arr[i];
+			j = i - 1;
+			while(j>0 && arr[j] > key)
+				arr[j+1] = arr[j--];
+			arr[j+1] = key;
+		}
+	}
+	
+	//归并排序
+	public static void mergeSort(int[] arr, int p, int r){
+		if(p<r){
+			q = (r+p+1)/2;
+			mergeSort(arr,p,q-1);
+			mergeSort(arr,q,r);
+			merge(arr,p,q-1,r);	
+		}
+	
+		
+	}
+	//归并排序中的合并操作
+	private static void merge(int[] arr, int p, int q, int r) {
+		// TODO Auto-generated method stub
+		int n1 = q-p+1;
+		int n2 = r-q;
+		int[] arr1 = new int[n1];
+		int[] arr2 = new int[n2];
+		for(i = 0;i < n1;i++)
+			arr1[i] = arr[p+i];
+		arr[n1] = Integer.MAX_VALUE;
+		for(i=0;i < n2;i++)
+			arr2[i] = arr[q+i+1];
+		arr[n2] = Integer.MAX_VALUE;
+		i = j = 0;
+		for(int k = p; p <= r; k++){
+			if(arr1[i] < arr2[j])
+				arr[k] = arr1[i++];
+			else
+				arr[k] = arr2[j++];
+		}
+	}
+	
+	//选择排序
+	public static void selectionSort(int[] arr){
+		int smallest;
+		for(i = 0; i < arr.length - 1; i++){
+			smallest = i;
+			for(j = i+1; j < arr.length; j++){
+				if(arr[j] < smallest)
+					smallest = j;
+			}
+			swap(arr,i,smallest);
+			}
+		}
+
+	private static void swap(int[] arr, int i, int smallest) {
+		// TODO Auto-generated method stub
+		int temp = arr[i];
+		arr[i] = arr[smallest];
+		arr[smallest] = temp;
+	}
+		
+	//冒泡排序
+	public static void bubbleSort(int[] arr){
+		for(i = 0; i < arr.length; i++){
+			for(j=arr.length; j <= i+1; j--){
+				if(arr[j] < arr[j-1])
+					swap(arr,j,j-1);
+			}
+		}
+	}
+	
+	//计算逆序对
+	public static int inversionCount(int[] arr, int p, int r){
+		int count = 0;
+		if(p < r){
+			q = (r+p+1)/2;
+			count += inversionCount(arr,p,q-1);
+			count += inversionCount(arr,q,r);
+			count += mergeCount(arr,p,q-1,r);
+		}
+		return count;
+	}
+
+	private static int mergeCount(int[] arr, int p, int q, int r) {
+		// TODO Auto-generated method stub
+		System.out.println(""+p+q+r);
+		int n1 = q-p+1;
+		int n2 = r-q;
+		System.out.println(""+n1+n2);
+		int[] arr1 = new int[n1+1];
+		int[] arr2 = new int[n2+1];
+		for(i = 0;i < n1;i++)
+			arr1[i] = arr[p+i];
+		arr1[n1] = Integer.MAX_VALUE;
+		for(i=0;i < n2;i++)
+			arr2[i] = arr[q+i+1];
+		arr2[n2] = Integer.MAX_VALUE;
+		i = j = 0;
+//		System.out.print(i);
+		int count = 0;
+		for(int k = p; p <= r; k++){
+			if(arr1[i] > arr2[j]){
+				count += n1-i;
+				arr[k] = arr1[j++];
+			}
+			else
+				arr[k] = arr2[i++];
+		}
+		return count;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+

@@ -1,0 +1,15 @@
+
+public class ArrayDemo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr = new int[]{1,4,7,33,6,8,3,7,9,55,88,66,123,5};
+		int[] r = ArraySorts.InsertSort(arr);
+		System.out.println(r);
+		System.out.println(arr);
+	}
+
+}
