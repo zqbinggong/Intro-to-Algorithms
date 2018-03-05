@@ -1,18 +1,3 @@
 INDEX VERSION 1.126+/home/zq/document/eclipse/italgs/.metadata/.plugins/org.eclipse.jdt.core
-2499518260.index
-3641416551.index
-1527136582.index
-1294800866.index
-5326678.index
-1182019834.index
-1538815476.index
-1906640830.index
-752553710.index
-2174310960.index
-3221991299.index
-4211271071.index
-1176060932.index
-2930871699.index
-3269005236.index
-3005375212.index
 3385150800.index
+547809381.index

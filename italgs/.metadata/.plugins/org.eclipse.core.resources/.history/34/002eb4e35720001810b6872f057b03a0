@@ -1,0 +1,18 @@
+
+public class Test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int[] arr = new int[]{13,-3,-25,20,-3,-16,-23,18,20,-7,12,-5,-22,15,-4,7};
+		int[] re = new int[3];
+		re = DivideAndConquer.findMaximumSubarray(arr, 0, arr.length-1);
+		for(int i = 0; i < 3;i++)
+			System.out.print(re[i]+"\t");
+		
+		
+
+	}
+
+}
