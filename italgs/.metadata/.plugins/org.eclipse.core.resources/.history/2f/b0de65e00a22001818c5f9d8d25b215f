@@ -1,0 +1,54 @@
+//建立一个描述堆的对象
+public class MyHeap {
+	//堆的基本属性heap_size
+	private int heap_size;
+	
+	public MyHeap(int[] arr){
+		heap_size = arr.length;
+		buildMaxHeap(arr);
+	}
+	
+	//堆的基本操作，寻找父子结点
+	private  int parent(int i){
+		return i/2;
+	}
+	
+	private  int left(int i){
+		return 2*i;
+	}
+	
+	private  int right(int i){
+		return 2*i + 1;
+	}
+	
+	//堆排序部分
+	//维护最大堆的性质
+	private void maxHeapify(int[] arr, int i){
+		int l = left(i);
+		int r = right(i);
+		int largest = i;
+		if(l < heap_size && arr[l] > arr[i])
+			largest = l;
+		if(r < heap_size && arr[r] > arr[largest])
+			largest = r;
+		if(largest != i){
+			swap(arr,i,largest);//交换两者位置
+			maxHeapify(arr, largest);
+		}
+	}
+
+	private void swap(int[] arr, int i, int largest) {
+		// TODO Auto-generated method stub
+		int temp = arr[i];
+		arr[i] = arr[largest];
+		arr[largest] = temp;
+	}
+	
+	//构建最大堆
+	private void buildMaxHeap(int[] arr){
+		heap_size = arr.length;
+		for(int i = arr.length/2; i >= 0; i--)
+			maxHeapify(arr, i);
+	}
+
+}

@@ -1,0 +1,77 @@
+
+public class HeapSort {
+	//堆的基本属性heap_size
+	public static int heap_size;
+	//堆的基本操作，寻找父子结点
+	public static int parent(int i){
+		return i/2;
+	}
+	
+	public static int left(int i){
+		return 2*i;
+	}
+	
+	public static int right(int i){
+		return 2*i + 1;
+	}
+	
+	//堆排序部分
+	//维护最大堆的性质
+	public static void maxHeapify(int[] arr, int i){
+		int l = left(i);
+		int r = right(i);
+		int largest = i;
+		if(l < heap_size && arr[l] > arr[i])
+			largest = l;
+		if(r < heap_size && arr[r] > arr[largest])
+			largest = r;
+		if(largest != i){
+			swap(arr,i,largest);//交换两者位置
+			maxHeapify(arr, largest);
+		}
+	}
+
+	private static void swap(int[] arr, int i, int largest) {
+		// TODO Auto-generated method stub
+		int temp = arr[i];
+		arr[i] = arr[largest];
+		arr[largest] = temp;
+	}
+	
+	//构建最大堆
+	public static void buildMaxHeap(int[] arr){
+		heap_size = arr.length;
+		for(int i = arr.length/2; i >= 0; i--)
+			maxHeapify(arr, i);
+	}
+	
+	//堆排序
+	public static void heapSort(int[] arr){
+		buildMaxHeap(arr);
+		for(int i = arr.length -1; i <= 1; i--){
+			swap(arr,i,0);
+			heap_size -= 1;
+			maxHeapify(arr, 0);
+		}
+	}
+
+	//优先队列部分
+	//返回最大值
+	public static int maximum(int[] arr){
+		return arr[0];
+	}
+	
+	//删除并返回最大元素，保持结构不变
+	public static int heapExtractMax(int[] arr){
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

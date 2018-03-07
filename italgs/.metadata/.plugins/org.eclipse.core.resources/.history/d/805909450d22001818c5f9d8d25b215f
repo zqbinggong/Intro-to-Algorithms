@@ -1,0 +1,19 @@
+
+public class Test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr = new int[]{3,10,16,9,14,7,1,8,4,2};
+		
+//		MyHeap h = new MyHeap(arr);
+		HeapTools.heapSort(arr);
+		for(int i = 0; i < arr.length; i++)
+			System.out.print(arr[i]+"\t");//16	14	10	9	4	7	1	8	3	2	
+		
+
+	}
+
+}
