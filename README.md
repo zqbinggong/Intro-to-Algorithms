@@ -1,5 +1,6 @@
 ## Introduction to Algorithm ##
 这里是我对于《算法导论》的学习心得，以及代码实现（java和python）<br>
+如有问题，请不吝赐教^_^<br>
 [chap2算法基础][1]<br>
 [chap4分治策略][2]<br>
 [chap5概率分析和随机算法][3]<br>
