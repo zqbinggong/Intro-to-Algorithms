@@ -26,6 +26,7 @@ public class MyHeap {
 		return 2*(i+1);
 	}
 	
+	//堆排序部分
 	//维护最大堆的性质
 	public void maxHeapify(int[] arr, int i){
 		int l = left(i);

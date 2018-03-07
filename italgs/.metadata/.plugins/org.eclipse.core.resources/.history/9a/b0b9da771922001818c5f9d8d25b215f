@@ -1,0 +1,14 @@
+//习题6-3,关于Young矩阵的代码实现
+public class YoungMatrix {
+	public int m, n;
+	public int[][] young;
+	//接受一个二位数组，将其转化成Young矩阵
+	//这里为了简便，假设该数组中每行的元素都是相同的，否则可以通过找到最长的行，来确定矩阵的列数
+	public YoungMatrix(int[][] arr){
+		m = arr.length;
+		n = arr[0].length;
+		young = arr;//最好是把arr的值赋给young，这里为了简便，直接将young指向arr
+		
+	}
+
+}

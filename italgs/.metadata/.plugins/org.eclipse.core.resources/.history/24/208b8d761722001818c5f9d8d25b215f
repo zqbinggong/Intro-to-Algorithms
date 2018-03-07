@@ -1,0 +1,9 @@
+//习题6-3,关于Young矩阵的代码实现
+public class YoungMatrix {
+	//接受一个二位数组，将其转化成Young矩阵
+	
+	public YoungMatrix(int[][] arr){
+		
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ArraySorts.java&apos; to &apos;MyHeap.java&apos;&#x0A;- Original project: &apos;chap2&apos;&#x0A;- Destination element: &apos;MyHeap.java&apos;&#x0A;- Original element: &apos;ArraySorts.java&apos;" description="Copy compilation unit" destination="=chap6/src&lt;{MyHeap.java" element1="/src&lt;{ArraySorts.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1520435341828" units="1" version="1.0"/>
+</session>
