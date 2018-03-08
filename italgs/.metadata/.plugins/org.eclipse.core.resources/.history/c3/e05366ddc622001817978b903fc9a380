@@ -1,0 +1,57 @@
+//对区间的模糊排序
+/*
+1. Find-Intersection(A,B,p,s,m,n):寻找并返回（A,B)中p到s段的公共子集(m,n)
+2. Partition-Right(A,B,p,s,m):根据m，对（A,B）排序，返回排序后m的下一位置
+3. Partition-Left-Middle(A,B,p,r,n)
+4. Fuzzy-Sort(A,B,p,s)
+*/
+public class Fuzzy {
+	public static void fuzzySort(int[] a, int[] b, int p, int s){
+		if(p < s){
+			int[] index = new int[2];
+			index = partitionSame(a,b,p,s);
+			fuzzySort(a,b,p,q-1);
+			fuzzySort(a,b,r+1,s);
+		}
+	}
+	private static int[] partitionSame(int[] a, int[] b, int p, int r) {
+		// TODO Auto-generated method stub
+		int[] index = new int[2];
+		
+		/*此过程有误
+		int i = partition(arr, p,r);
+		int j = i;
+		while(i > 0 && arr[i-1] == arr[i])
+			i--;
+		while(j < r-1 && arr[j+1] == arr[j])
+			j++;
+		*/
+		int x = arr[p];
+		int i = p;
+		int h = p;
+		for(int j = p+1; j <= r; j++){
+			if(arr[j] < x){
+				int y = arr[j];
+				arr[j] = arr[h+1];
+				arr[i++] = y;
+				h++;
+			}else if(arr[j] == x){
+				swap(arr,h+1,j);
+				h++;
+			}
+		}
+		index[0] = i;
+		index[1] = h;
+		return index;
+	}
+	
+	
+	private static void swap(int[] arr, int i, int j) {
+		// TODO Auto-generated method stub
+		int temp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = temp;
+	}
+
+}
+

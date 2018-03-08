@@ -44,14 +44,31 @@ public class QuickSort {
 	private static int[] partitionSame(int[] arr, int p, int r) {
 		// TODO Auto-generated method stub
 		int[] index = new int[2];
-		int i = partition(arr, p, r);
+		
+		/*此过程有误
+		int i = partition(arr, p,r);
 		int j = i;
 		while(i > 0 && arr[i-1] == arr[i])
 			i--;
 		while(j < r-1 && arr[j+1] == arr[j])
 			j++;
+		*/
+		int x = arr[p];
+		int i = p;
+		int h = p;
+		for(int j = p+1; j <= r; j++){
+			if(arr[j] < x){
+				int y = arr[j];
+				arr[j] = arr[h+1];
+				arr[i++] = y;
+				h++;
+			}else if(arr[j] == x){
+				swap(arr,h+1,j);
+				h++;
+			}
+		}
 		index[0] = i;
-		index[1] = j;
+		index[1] = h;
 		return index;
 	}
 

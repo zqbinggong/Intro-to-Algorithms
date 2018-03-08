@@ -6,5 +6,8 @@
 <fullyQualifiedTypeName name="Test"/>
 <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
 <fullyQualifiedTypeName name="YoungMatrix"/>
+<fullyQualifiedTypeName name="QuickSort"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="FuzzySort"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
