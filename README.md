@@ -5,8 +5,10 @@
 [chap4分治策略][2]<br>
 [chap5概率分析和随机算法][3]<br>
 [chap6堆排序][4]<br>
+[chap7快速排序][5]<br>
 
   [1]: https://www.zybuluo.com/zqbinggong/note/1060894
   [2]: https://www.zybuluo.com/zqbinggong/note/1062059
   [3]: https://www.zybuluo.com/zqbinggong/note/1062378
   [4]: https://www.zybuluo.com/zqbinggong/note/1064566
+  [5]: https://www.zybuluo.com/zqbinggong/note/1065428

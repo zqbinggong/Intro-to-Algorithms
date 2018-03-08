@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="ArraySorts"/>
+<fullyQualifiedTypeName name="MyHeap"/>
+<fullyQualifiedTypeName name="HeapTools"/>
+<fullyQualifiedTypeName name="Test"/>
+<fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
+<fullyQualifiedTypeName name="YoungMatrix"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
