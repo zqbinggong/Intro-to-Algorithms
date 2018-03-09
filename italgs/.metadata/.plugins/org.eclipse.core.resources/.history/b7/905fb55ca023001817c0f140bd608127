@@ -27,13 +27,19 @@ public class LinearTimeSort {
 	}
 	
 	//水壶问题
-	//此处使用的是利用快速排序思想的算法，其时间复杂度为n^2
 	public static void matchJugs(int[] r, int[] b, int p, int s){
 		if(p < s){
-			
+			/*错误版本，错误在于没有深入理解快速排序中，随机partition中，随机选取一个主元后，首先要将该主元换/
+			 * 到数组的尾端
 			int k = (int) Math.round(Math.random()*(s-p)+p);
-			int q = partitionRed(r,p,s,b[k]);
-			partitionBlue(b,p,s,b[k]);
+			int q = partitionRed(r,p,s,r[k]);
+			partitionBlue(b,p,s,r[q]);
+			matchJugs(r, b, p, q-1);
+			matchJugs(r, b, q+1, s);
+			*/
+			int k = (int) Math.round(Math.random()*(s-p)+p);
+			int q = partitionRed(r,p,s,k);
+			partitionBlue(b,p,s,r[q]);
 			matchJugs(r, b, p, q-1);
 			matchJugs(r, b, q+1, s);
 		}
@@ -41,12 +47,6 @@ public class LinearTimeSort {
 
 	private static void partitionBlue(int[] b, int p, int s, int x) {
 		// TODO Auto-generated method stub
-		int index = 0;
-		for(int i = p; i <=s; i++){
-			if(b[i] == x)
-				index = i;
-		}
-		swap(b,index,s);
 		int j = p - 1;
 		for(int i = p; i <= s; i++){
 			if(b[i] <= x){
@@ -55,20 +55,17 @@ public class LinearTimeSort {
 		}
 	}
 
-	private static int partitionRed(int[] r, int p, int s, int x) {
+	private static int partitionRed(int[] r, int p, int s, int k) {
 		// TODO Auto-generated method stub
-		int index = 0;
-		for(int i = p; i <=s; i++){
-			if(r[i] == x)
-				index = i;
-		}
-		swap(r,index,s);
+		int x = r[k];
+		swap(r,k,s);
 		int j = p - 1;
 		for(int i = p; i <= s; i++){
 			if(r[i] <= x){
 				swap(r,i,++j);
 			}
 		}
+		swap()
 		return j;
 	}
 
