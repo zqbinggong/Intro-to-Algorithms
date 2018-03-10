@@ -8,6 +8,7 @@
 [chap6堆排序][5]<br>
 [chap7快速排序][6]<br>
 [chap8线性时间排序][7]<br>
+[chap9中位数和顺序统计量][8]<br>
 
   [1]: https://www.zybuluo.com/zqbinggong/note/1060894
   [2]: https://www.zybuluo.com/zqbinggong/note/1062059
@@ -16,3 +17,4 @@
   [5]: https://www.zybuluo.com/zqbinggong/note/1064566
   [6]: https://www.zybuluo.com/zqbinggong/note/1065428
   [7]: https://www.zybuluo.com/zqbinggong/note/1067124
+  [8]: https://www.zybuluo.com/zqbinggong/note/1068328

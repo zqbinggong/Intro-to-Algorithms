@@ -1,0 +1,9 @@
+
+public class Test {
+	public static void main(String[] args){
+		int[] a = new int[]{9,8,5,4,6,3,7,2,1};
+		int x = SelectOrder.randomSelect(a, 0, a.length-1, 6);
+		System.out.print(x);
+	}
+
+}

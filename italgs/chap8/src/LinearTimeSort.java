@@ -27,7 +27,7 @@ public class LinearTimeSort {
 	}
 	
 	//水壶问题
-	//此处使用的是利用快速排序思想的算法，其时间复杂度为n^2
+	//此处使用的是利用快速排序思想的算法，其时间复杂度为nlgn
 	public static void matchJugs(int[] r, int[] b, int p, int s){
 		if(p < s){
 			

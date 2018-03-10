@@ -15,16 +15,16 @@ public class Test {
 			System.out.print(b[i]+"\t");
 		
 		*/
-		
-		int[] r = new int[]{1,5,4,2,3};
-		int[] b = new int[]{3,4,5,1,2};
+		/*测试水壶问题
+		int[] r = new int[]{1,5,4,2,3,6,8,9,7};
+		int[] b = new int[]{3,4,5,1,2,9,7,6,8};
 		LinearTimeSort.matchJugs(r, b, 0, r.length-1);
 		for(int i = 0; i < r.length; i++)
 			System.out.print(r[i]+"\t");
 		System.out.println();
 		for(int i = 0; i < b.length; i++)
 			System.out.print(b[i]+"\t");
-		
+		*/
 		
 
 	}

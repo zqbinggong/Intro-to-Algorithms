@@ -35,13 +35,13 @@
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" partName="Test.java" path="/home/zq/document/eclipse/italgs/chap7/src/Test.java" title="Test.java" tooltip="chap7/src/Test.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/chap7/src/Test.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="195" selectionOffset="637" selectionTopPixel="373"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" partName="Test.java" path="/home/zq/document/eclipse/italgs/chap8/src/Test.java" title="Test.java" tooltip="chap8/src/Test.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/chap8/src/Test.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="402" selectionTopPixel="187"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FuzzySort.java" partName="FuzzySort.java" path="/home/zq/document/eclipse/italgs/chap7/src/FuzzySort.java" title="FuzzySort.java" tooltip="chap7/src/FuzzySort.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/chap7/src/FuzzySort.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1355" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LinearTimeSort.java" partName="LinearTimeSort.java" path="/home/zq/document/eclipse/italgs/chap8/src/LinearTimeSort.java" title="LinearTimeSort.java" tooltip="chap8/src/LinearTimeSort.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/chap8/src/LinearTimeSort.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="244"/>
 </editor>
 </editors>
 <views>
@@ -90,7 +90,9 @@
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
-<view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
+<view id="org.eclipse.jdt.ui.SourceView" partName="Declaration">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
@@ -198,7 +200,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.24950495" ratioLeft="252" ratioRight="758" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.6441441" ratioLeft="429" ratioRight="237" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.8003003" ratioLeft="533" ratioRight="133" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
@@ -240,161 +242,159 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/chap7/src/FuzzySort2.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/chap7/src/Test.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/chap7/src/Fuzzy.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/chap8/src/LinearTimeSort.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/chap8/src/Test.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/chap7/src/QuickSort.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/chap7/src/FuzzySort.java"/>
 </editors>
-<item historyLabel="Fuzzy.java" index="2">
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="792" y="0"/>
+</item>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="386" y="0"/>
+</item>
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="827" y="0"/>
+</item>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="386" y="0"/>
+</item>
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="712" y="48"/>
+</item>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="386" y="0"/>
+</item>
+<item historyLabel="Test.java" index="1">
 <position/>
 </item>
-<item historyLabel="Fuzzy.java" index="2">
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="692" y="0"/>
+</item>
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="887" y="0"/>
+</item>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="246" y="0"/>
+</item>
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="887" y="0"/>
+</item>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="486" y="0"/>
+</item>
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="887" y="0"/>
+</item>
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="760" y="0"/>
+</item>
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="761" y="0"/>
+</item>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="486" y="0"/>
+</item>
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="761" y="0"/>
+</item>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="486" y="0"/>
+</item>
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="761" y="0"/>
+</item>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="486" y="0"/>
+</item>
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="890" y="0"/>
+</item>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="486" y="0"/>
+</item>
+<item historyLabel="LinearTimeSort.java" index="0">
 <position/>
 </item>
-<item historyLabel="Fuzzy.java" index="2">
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="486" y="0"/>
+</item>
+<item historyLabel="LinearTimeSort.java" index="0">
 <position/>
 </item>
-<item historyLabel="Fuzzy.java" index="2">
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="486" y="0"/>
+</item>
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="792" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="2">
+<position info="not_deleted" x="457" y="0"/>
+</item>
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="792" y="0"/>
+</item>
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="1297" y="0"/>
+</item>
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="1493" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="2">
+<position info="not_deleted" x="457" y="0"/>
+</item>
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="1493" y="0"/>
+</item>
+<item historyLabel="LinearTimeSort.java" index="0">
 <position/>
 </item>
-<item historyLabel="Fuzzy.java" index="2">
-<position/>
+<item historyLabel="QuickSort.java" index="2">
+<position info="not_deleted" x="457" y="0"/>
 </item>
-<item historyLabel="Fuzzy.java" index="2">
-<position/>
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="1505" y="0"/>
 </item>
-<item historyLabel="Fuzzy.java" index="2">
-<position/>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="640" y="0"/>
 </item>
-<item historyLabel="Fuzzy.java" index="2">
-<position/>
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="1505" y="0"/>
 </item>
-<item historyLabel="QuickSort.java" index="3">
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="1052" y="0"/>
+</item>
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="1074" y="0"/>
+</item>
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="1399" y="0"/>
+</item>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="700" y="0"/>
+</item>
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="1399" y="0"/>
+</item>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="700" y="0"/>
+</item>
+<item historyLabel="LinearTimeSort.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="FuzzySort2.java" index="0">
-<position info="not_deleted" x="0" y="1629"/>
+<item historyLabel="Test.java" index="1">
+<position info="not_deleted" x="484" y="0"/>
 </item>
-<item historyLabel="Fuzzy.java" index="2">
-<position/>
-</item>
-<item historyLabel="QuickSort.java" index="3">
+<item historyLabel="LinearTimeSort.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="QuickSort.java" index="3">
-<position info="not_deleted" x="1303" y="0"/>
-</item>
-<item historyLabel="QuickSort.java" index="3">
-<position info="not_deleted" x="1518" y="0"/>
-</item>
-<item historyLabel="QuickSort.java" index="3">
-<position info="not_deleted" x="1514" y="0"/>
-</item>
-<item historyLabel="QuickSort.java" index="3">
-<position info="not_deleted" x="1413" y="0"/>
-</item>
-<item historyLabel="QuickSort.java" index="3">
-<position info="not_deleted" x="1424" y="0"/>
-</item>
-<item historyLabel="QuickSort.java" index="3">
-<position info="not_deleted" x="1438" y="0"/>
-</item>
-<item historyLabel="QuickSort.java" index="3">
-<position info="not_deleted" x="1471" y="0"/>
-</item>
-<item historyLabel="QuickSort.java" index="3">
-<position info="not_deleted" x="1514" y="0"/>
-</item>
-<item historyLabel="QuickSort.java" index="3">
-<position info="not_deleted" x="1549" y="0"/>
-</item>
 <item historyLabel="Test.java" index="1">
-<position info="not_deleted" x="358" y="0"/>
+<position info="not_deleted" x="402" y="0"/>
 </item>
-<item historyLabel="QuickSort.java" index="3">
-<position info="not_deleted" x="1549" y="0"/>
+<item historyLabel="LinearTimeSort.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Fuzzy.java" index="2">
-<position/>
-</item>
-<item historyLabel="FuzzySort2.java" index="0">
-<position info="not_deleted" x="0" y="1629"/>
-</item>
-<item historyLabel="QuickSort.java" index="3">
-<position info="not_deleted" x="1549" y="0"/>
-</item>
-<item historyLabel="Fuzzy.java" index="2">
-<position info="not_deleted" x="341" y="0"/>
-</item>
-<item historyLabel="FuzzySort2.java" index="0">
-<position info="not_deleted" x="0" y="1629"/>
-</item>
-<item historyLabel="Fuzzy.java" index="2">
-<position info="not_deleted" x="707" y="0"/>
-</item>
-<item historyLabel="QuickSort.java" index="3">
-<position info="not_deleted" x="1006" y="563"/>
-</item>
-<item historyLabel="Fuzzy.java" index="2">
-<position info="not_deleted" x="707" y="0"/>
-</item>
-<item historyLabel="Fuzzy.java" index="2">
-<position info="not_deleted" x="958" y="0"/>
-</item>
-<item historyLabel="Fuzzy.java" index="2">
-<position info="not_deleted" x="1217" y="0"/>
-</item>
-<item historyLabel="Fuzzy.java" index="2">
-<position info="not_deleted" x="1231" y="0"/>
-</item>
-<item historyLabel="Fuzzy.java" index="2">
-<position info="not_deleted" x="747" y="0"/>
-</item>
-<item historyLabel="Fuzzy.java" index="2">
-<position info="not_deleted" x="574" y="0"/>
-</item>
-<item historyLabel="Test.java" index="1">
-<position info="not_deleted" x="456" y="88"/>
-</item>
-<item historyLabel="Fuzzy.java" index="2">
-<position info="not_deleted" x="574" y="0"/>
-</item>
-<item historyLabel="Test.java" index="1">
-<position info="not_deleted" x="637" y="195"/>
-</item>
-<item historyLabel="Fuzzy.java" index="2">
-<position info="not_deleted" x="574" y="0"/>
-</item>
-<item historyLabel="Fuzzy.java" index="2">
-<position info="not_deleted" x="1181" y="0"/>
-</item>
-<item historyLabel="QuickSort.java" index="3">
-<position info="not_deleted" x="1006" y="563"/>
-</item>
-<item historyLabel="Fuzzy.java" index="2">
-<position info="not_deleted" x="1181" y="0"/>
-</item>
-<item historyLabel="Fuzzy.java" index="2">
-<position info="not_deleted" x="1123" y="0"/>
-</item>
-<item historyLabel="Fuzzy.java" index="2">
-<position info="not_deleted" x="1168" y="0"/>
-</item>
-<item historyLabel="QuickSort.java" index="3">
-<position info="not_deleted" x="1006" y="563"/>
-</item>
-<item historyLabel="Fuzzy.java" index="2">
-<position info="not_deleted" x="1168" y="0"/>
-</item>
-<item historyLabel="Test.java" index="1">
-<position info="not_deleted" x="637" y="195"/>
-</item>
-<item historyLabel="Fuzzy.java" index="2">
-<position info="not_deleted" x="1168" y="0"/>
-</item>
-<item active="true" historyLabel="FuzzySort.java" index="4">
-<position/>
+<item active="true" historyLabel="Test.java" index="1">
+<position info="not_deleted" x="402" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -413,17 +413,23 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QuickSort.java" tooltip="chap7/src/QuickSort.java">
-<persistable path="/chap7/src/QuickSort.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LinearTimeSort.java" tooltip="chap8/src/LinearTimeSort.java">
+<persistable path="/chap8/src/LinearTimeSort.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Fuzzy.java" tooltip="chap7/src/Fuzzy.java">
-<persistable path="/chap7/src/Fuzzy.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FuzzySort2.java" tooltip="chap7/src/FuzzySort2.java">
+<persistable path="/chap7/src/FuzzySort2.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FuzzySort.java" tooltip="chap7/src/FuzzySort.java">
 <persistable path="/chap7/src/FuzzySort.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FuzzySort2.java" tooltip="chap7/src/FuzzySort2.java">
-<persistable path="/chap7/src/FuzzySort2.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QuickSort.java" tooltip="chap7/src/QuickSort.java">
+<persistable path="/chap7/src/QuickSort.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="chap8/src/Test.java">
+<persistable path="/chap8/src/Test.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Fuzzy.java" tooltip="chap7/src/Fuzzy.java">
+<persistable path="/chap7/src/Fuzzy.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="chap7/src/Test.java">
 <persistable path="/chap7/src/Test.java"/>

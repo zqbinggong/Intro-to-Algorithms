@@ -10,5 +10,6 @@
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="FuzzySort"/>
 <fullyQualifiedTypeName name="FuzzySort2"/>
+<fullyQualifiedTypeName name="LinearTimeSort"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
