@@ -16,7 +16,7 @@
 [**Part3数据结构**][9]<br>
 [chap10基本数据结构][10]<br>
 [chap11散列表][11]<br>
-[chap12二叉搜索树][11]<br>
+[chap12二叉搜索树][12]<br>
 
   [0]: https://www.zybuluo.com/zqbinggong/note/1069183
   [1]: https://www.zybuluo.com/zqbinggong/note/1060894
