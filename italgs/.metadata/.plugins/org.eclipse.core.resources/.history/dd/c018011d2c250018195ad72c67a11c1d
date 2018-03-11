@@ -1,0 +1,8 @@
+//创建一个结点类
+public class Nodes {
+	//-1 to represent NIL
+	public int left = -1,right = -1,p = -1,key;
+	public Nodes(){
+	}
+
+}

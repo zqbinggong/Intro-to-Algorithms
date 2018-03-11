@@ -1,0 +1,8 @@
+//构建一个实现二叉搜索树的类，并且提供二叉树上的操作方法
+public class BinarySearchTrees {
+	
+	public BinarySearchTrees(int[] a){
+		
+	}
+
+}

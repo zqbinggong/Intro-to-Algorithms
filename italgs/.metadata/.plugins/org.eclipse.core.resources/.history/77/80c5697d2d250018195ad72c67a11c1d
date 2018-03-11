@@ -1,0 +1,24 @@
+//构建一个实现二叉搜索树的类，并且提供二叉树上的操作方法
+public class BinarySearchTrees {
+	Nodes root = new Nodes();
+	Nodes left = new Nodes();
+	Nodes right = new Nodes();
+	Nodes p = new Nodes();
+	
+	
+	public BinarySearchTrees(int[] a){
+		Nodes t = this.root;
+		buildTree(t,a);//这里似乎必须将t作为参数传入builtTree？
+	}
+
+	private void buildTree(Nodes t,int[] a) {
+		// TODO Auto-generated method stub
+		for(int i = 0; i < a.length; i++) 
+			treeInsert(t,a[i]);
+		
+	}
+	public void inorderWalk(){
+		
+	}
+
+}
