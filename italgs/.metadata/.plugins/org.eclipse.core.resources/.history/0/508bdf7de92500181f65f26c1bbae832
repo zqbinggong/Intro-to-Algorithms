@@ -1,0 +1,134 @@
+//构建一个实现二叉搜索树的类，并且提供二叉树上的操作方法
+public class RBTree {
+	RBNodes root = new RBNodes();
+	RBNodes nil = new RBNodes();
+//	Nodes left = new Nodes();
+//	Nodes right = new Nodes();
+//	Nodes p = new Nodes();
+	
+	public RBTree(int[] a){
+		nil.color = 0;
+		this.root = nil;//初始化根结点，否则，根结点默认是key为0的结点
+		buildTree(a);//这里似乎必须将t作为参数传入builtTree？
+	}
+	
+	//种树
+	private void buildTree(int[] a) {
+		// TODO Auto-generated method stub
+		for(int i = 0; i < a.length; i++) 
+			treeInsert(a[i]);
+		
+	}
+	
+	//插入操作
+	public void treeInsert(int key) {
+		// TODO Auto-generated method stub
+		RBNodes z = new RBNodes();//这里参数是数值，需要为该数创建一个nodes
+		z.key = key;
+		RBNodes y = this.nil;
+		RBNodes x = this.root;
+		while(x != this.nil){
+			y = x;
+			if(key < x.key) x = x.left;
+			else x = x.right;
+		}
+		z.p = y;
+		if(y == this.nil) this.root = z;
+		else if(key < y.key) y.left = z;
+		else y.right = z;
+		z.right = this.nil;
+		z.left = this.nil;
+		z.color = 1;
+		rbInsertFixup(z);
+		
+	}
+	
+	//rotate
+	private void rbInsertFixup(RBNodes z) {
+		// TODO Auto-generated method stub
+		while(z.p.color == 1){
+			if(z.p == z.p.p.left){
+				RBNodes y = z.p.p.right;
+				if(y.color == 1){
+					z.p.color = 0;
+					y.color = 0;
+					z.p.p.color = 1;
+					z = z.p.p;
+				}else{
+					if(z == z.p.right){
+						z = z.p;
+						leftRotate(z);
+					}
+					z.p.color = 0;
+					z.p.p.color = 1;
+					rightRotate(z.p.p);
+				}
+			}else{
+				RBNodes y = z.p.p.left;
+				if(y.color == 1){
+					z.p.color = 0;
+					y.color = 0;
+					z.p.p.color = 1;
+					z = z.p.p;
+				}else{
+					if(z == z.p.left){
+						z = z.p;
+						rightRotate(z);
+					}
+					z.p.color = 0;
+					z.p.p.color = 1;
+					leftRotate(z.p.p);
+				}	
+			}
+		}
+		this.root.color = 0;
+	}
+
+	private void leftRotate(RBNodes x) {
+		// TODO Auto-generated method stub
+		RBNodes y = x.right;
+		x.right = y.left;
+		if(y.left != this.nil) y.left.p = x;
+		y.p = x.p;
+		if(x.p == this.nil) this.root = y;
+		else if(x == x.p.left ) x.p.left = p;
+		else x.p.right = y;
+		y.left = x;
+		x.p = y;
+	}
+	
+	
+	private void rightRotate(RBNodes x) {
+		// TODO Auto-generated method stub
+		RBNodes y = x.left;
+		x.left = y.right;
+		if(y.right != this.nil) y.right.p = x;
+		y.p = x.p;
+		if(x.p == this.nil) this.root = y;
+		else if(x == x.p.right ) x.p.right = p;
+		else x.p.left = y;
+		y.right = x;
+		x.p = y;
+	}
+	//中序遍历
+	public void inorderWalk(RBNodes t){
+		if(t != null){
+			inorderWalk(t.left);
+			System.out.print(t.key);
+			inorderWalk(t.right);
+		}
+	}
+	
+	
+	//最值
+	public RBNodes treeMinimun(RBNodes x){
+		while(x.left != null) x= x.left;
+		return x;
+	}
+	
+	public RBNodes treeMaximum(RBNodes x){
+		while(x.right != null) x= x.right;
+		return x;
+	}
+	
+	

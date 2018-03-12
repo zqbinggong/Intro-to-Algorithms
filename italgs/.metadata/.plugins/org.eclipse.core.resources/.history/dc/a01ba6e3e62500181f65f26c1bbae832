@@ -1,0 +1,115 @@
+//构建一个实现二叉搜索树的类，并且提供二叉树上的操作方法
+public class RBTree {
+	RBNodes root = new RBNodes();
+//	Nodes left = new Nodes();
+//	Nodes right = new Nodes();
+//	Nodes p = new Nodes();
+	
+	public RBTree(int[] a){
+		this.root = null;//初始化根结点，否则，根结点默认是key为0的结点
+		buildTree(a);//这里似乎必须将t作为参数传入builtTree？
+	}
+	
+	//种树
+	private void buildTree(int[] a) {
+		// TODO Auto-generated method stub
+		for(int i = 0; i < a.length; i++) 
+			treeInsert(a[i]);
+		
+	}
+	
+	//插入操作
+	public void treeInsert(int key) {
+		// TODO Auto-generated method stub
+		RBNodes z = new RBNodes();//这里参数是数值，需要为该数创建一个nodes
+		z.key = key;
+		Nodes y = null;
+		Nodes x = this.root;
+		while(x != null){
+			y = x;
+			if(key < x.key) x = x.left;
+			else x = x.right;
+		}
+		z.p = y;
+		if(y == null) this.root = z;
+		else if(key < y.key) y.left = z;
+		else y.right = z;
+		
+	}
+	
+	//中序遍历
+	public void inorderWalk(Nodes t){
+		if(t != null){
+			inorderWalk(t.left);
+			System.out.print(t.key);
+			inorderWalk(t.right);
+		}
+	}
+	
+	//查询操作
+	public Nodes treeSearch(Nodes x, int k){
+		while(x != null && k != x.key){
+			if(k < x.key) x = x.left;
+			else x = x.right;
+		}
+		return x;
+	}
+	
+	//最值
+	public Nodes treeMinimun(Nodes x){
+		while(x.left != null) x= x.left;
+		return x;
+	}
+	
+	public Nodes treeMaximum(Nodes x){
+		while(x.right != null) x= x.right;
+		return x;
+	}
+	
+	//前驱和后继
+	public Nodes treeSuccessor(Nodes x){
+		if(x.right != null) return treeMinimun(x.right);
+		Nodes y = x.p;
+		while(y != null && x == y.right){
+			x = y;
+			y = y.p;
+		}
+		return y;
+	}
+	
+	public Nodes treeProdecessor(Nodes x){
+		if(x.left != null) return treeMinimun(x.left);
+		Nodes y = x.p;
+		while(y != null && x == y.left){
+			x = y;
+			y = y.p;
+		}
+		return y;
+	}
+	
+	//删除操作
+	public void treeDelete(Nodes z){
+		if(z.left == null) transplant(z,z.right);
+		else if(z.right == null) transplant(z, z.left);
+		else{
+			Nodes y = treeMinimun(z.right);
+			if(y.p != z){
+				transplant(y, y.right);
+				y.right = z.right;
+				y.right.p = y;
+			}
+			transplant(z, y);
+			y.left = z.left;
+			y.left.p = y;
+		}
+	}
+	//移植操作
+	private void transplant(Nodes u, Nodes v) {
+		// TODO Auto-generated method stub
+		if(u.p == null) this.root = v;
+		else if(u == u.p.left) u.p.left = v;
+		else u.p.right = v;
+		if(v != null) v.p = u.p;
+	}
+	
+}

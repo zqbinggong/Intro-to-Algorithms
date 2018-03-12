@@ -1,0 +1,29 @@
+
+public class Test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] a = new int[]{15,6,18,3,7,17,20,2,4,13,9};
+		RBTree rb = new RBTree(a);
+		
+		
+		rb.inorderWalk(rb.root);
+		System.out.print(rb.root.left.left.key);
+//		bt.treeDelete(bt.root);
+//		bt.inorderWalk(bt.root);
+//		bt.treeInsert(15);
+//		bt.inorderWalk(bt.root);
+//		
+//		
+//		Nodes n = new Nodes();
+//		n = bt.treeMinimun(bt.root);
+////		n = bt.treeMaximum(bt.root);
+////		System.out.print(n.key);
+//		System.out.print(bt.root.key);
+
+	}
+
+}

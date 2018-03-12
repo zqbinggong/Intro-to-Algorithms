@@ -1,0 +1,13 @@
+//创建一个结点类
+public class RBNodes {
+	//-1 to represent NIL
+	public RBNodes left,right,p;
+	public int key;
+	public int color;//0 for black; 1 for red
+	public RBNodes(){
+		this.left = null;
+		this.right = null;
+		this.p = null;
+	}
+
+}
