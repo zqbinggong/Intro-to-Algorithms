@@ -18,7 +18,7 @@
 [chap11散列表][11]<br>
 [chap12二叉搜索树][12]<br>
 [chap13红黑树][13]<br>
-[chap13数据结构的扩张][14]<br>
+[chap14数据结构的扩张][14]<br>
 to be continued
 
   [0]: https://www.zybuluo.com/zqbinggong/note/1069183
