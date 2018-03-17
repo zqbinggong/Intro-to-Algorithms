@@ -18,8 +18,12 @@
 [chap11散列表][11]<br>
 [chap12二叉搜索树][12]<br>
 [chap13红黑树][13]<br>
-[chap14数据结构的扩张][14]<br>
-to be continued
+[chap14数据结构的扩张][14]<br><br>
+
+[par4高级设计和分析技术][15]<br>
+[chap15动态规划][16]<br>
+
+**to be continued**
 
   [0]: https://www.zybuluo.com/zqbinggong/note/1069183
   [1]: https://www.zybuluo.com/zqbinggong/note/1060894
@@ -35,7 +39,9 @@ to be continued
   [11]: https://www.zybuluo.com/zqbinggong/note/1069138
   [12]: https://www.zybuluo.com/zqbinggong/note/1069304
   [13]: https://www.zybuluo.com/zqbinggong/note/1069972
-  [14]: https://www.zybuluo.com/zqbinggong/note/1070898  
+  [14]: https://www.zybuluo.com/zqbinggong/note/1070898
+  [15]: https://www.zybuluo.com/zqbinggong/note/1076893
+  [16]: https://www.zybuluo.com/zqbinggong/note/1077191
   
   
   
