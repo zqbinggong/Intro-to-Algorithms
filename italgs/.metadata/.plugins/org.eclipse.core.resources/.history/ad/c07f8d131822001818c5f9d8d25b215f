@@ -1,9 +1,0 @@
-//习题6-3,关于Young矩阵的代码实现
-public class YoungMatrix {
-	//接受一个二位数组，将其转化成Young矩阵
-	//这里为了简便，假设该数组中每行的元素都是相同的，否则可以通过找到最长的行，来确定矩阵的列数
-	public YoungMatrix(int[][] arr){
-		
-	}
-
-}

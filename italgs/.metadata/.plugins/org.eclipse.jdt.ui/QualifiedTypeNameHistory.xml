@@ -11,5 +11,7 @@
 <fullyQualifiedTypeName name="FuzzySort"/>
 <fullyQualifiedTypeName name="FuzzySort2"/>
 <fullyQualifiedTypeName name="LinearTimeSort"/>
+<fullyQualifiedTypeName name="CutRod"/>
+<fullyQualifiedTypeName name="MatrixChainMultiplication"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
