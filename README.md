@@ -22,6 +22,7 @@
 
 [par4高级设计和分析技术][15]<br>
 [chap15动态规划][16]<br>
+[chap16贪心算法][17]<br>
 
 **to be continued**
 
@@ -42,6 +43,7 @@
   [14]: https://www.zybuluo.com/zqbinggong/note/1070898
   [15]: https://www.zybuluo.com/zqbinggong/note/1076893
   [16]: https://www.zybuluo.com/zqbinggong/note/1077191
+  [17]: https://www.zybuluo.com/zqbinggong/note/1078168
   
   
   
