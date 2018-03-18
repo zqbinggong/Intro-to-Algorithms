@@ -1,0 +1,52 @@
+
+public class LCS {
+	public static void lcsLength(char[] x, char[] y){
+		int m = x.length;
+		int n = y.length;
+		
+		int[][] b = new int[m][n];
+		int[][] c = new int[m+1][n+1];
+		
+		for(int i = 0; i < m; i++){
+			for(int j = 0; j < n; j++){
+				if(x[i] == y[j]){
+					c[i+1][j+1] = c[i][j] + 1;
+					b[i][j] = 0;
+				}
+				else if(c[i][j+1] > c[i+1][j]){
+					c[i+1][j+1] = c[i][j+1];
+					b[i][j] = 1;
+				}
+				else{
+					c[i+1][j+1] = c[i+1][j];
+					b[i][j] = -1;
+				}
+			}
+		}
+		System.out.print(c[m][n]);
+		printLcs(b,x,m-1,n-1);
+	}
+
+	private static void printLcs(int[][] b, char[] x, int i, int j) {
+		// TODO Auto-generated method stub
+		if(i < 0 | j < 0) return;
+		if(b[i][j] == 0){
+			printLcs(b,x,i-1,j-1);
+			System.out.print(x[i]);
+		}
+		else if(b[i][j] == 1) printLcs(b,x,i-1,j);
+		else printLcs(b,x,i,j-1);
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

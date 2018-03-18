@@ -1,0 +1,41 @@
+
+public class MatrixChainMultiplication {
+	
+	public static void matrixChainOrder(int[] p){
+		int n = p.length - 1;
+		int[][] m = new int[n][n];
+		int[][] s = new int[n-1][n];//此处可以将列数设为n-1,用s[i,j]来表示r[i,j+1]的切割方案
+		
+		for(int l = 2; l <=n; l++){
+			for(int i = 0; i <= n-l; i++){
+				int j = i+l-1;
+				m[i][j] = Integer.MAX_VALUE;
+				for(int k = i; k < j; k++){
+					int q = m[i][k] + m[k+1][j] + p[i]*p[k+1]*p[j+1];
+					if(q < m[i][j]){
+						m[i][j] = q;
+						s[i][j] = k;
+					}
+				}
+			}
+		}
+		printOptimalParens(s,0,n-1);
+	}
+
+	private static void printOptimalParens(int[][] s, int i, int j) {
+		// TODO Auto-generated method stub
+		if(i == j)
+			System.out.print("A"+(i+1));
+		else{
+			System.out.print("(");
+			printOptimalParens(s, i, s[i][j]);
+			printOptimalParens(s, s[i][j]+1,j);
+			System.out.print(")");
+			
+		}
+		
+	}
+	
+	
+
+}

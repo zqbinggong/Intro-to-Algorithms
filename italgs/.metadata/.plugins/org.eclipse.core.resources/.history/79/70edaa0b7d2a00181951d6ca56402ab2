@@ -1,0 +1,39 @@
+
+public class CutRod {
+	
+	//top-down with memoization
+	public static void memoCutRod(int[] p, int n){
+		int[] r = new int[n+1];
+		int[] s = new int[n+1];
+		for(int i = 0; i <= n; i++)
+			r[i] = - Integer.MAX_VALUE;
+		memoCutRodAux(p,n,r,s);
+		for(int j = 0; j <= n; j++){
+			System.out.print(r[j]+":");
+			while(j > 0){
+				System.out.print(s[j]+"\t");
+				j -= s[j];
+			}
+		}
+		
+		
+		
+	}
+
+	private static void memoCutRodAux(int[] p, int n, int[] r, int[] s) {
+		// TODO Auto-generated method stub
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

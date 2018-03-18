@@ -1,0 +1,9 @@
+
+public class Test {
+	public static void main(String args[]){
+		int[] p = new int[]{1,5,8,9,10,17,17,20,24,30};
+//		CutRod.memoCutRod(p, 10);
+		CutRod.bottomUpCutRpd(p, 10);
+	}
+
+}

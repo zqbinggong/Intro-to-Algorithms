@@ -1,0 +1,88 @@
+
+public class CutRod {
+	
+	//top-down with memoization
+	public static void memoCutRod(int[] p, int n){
+		int[] r = new int[n+1];
+		int[] s = new int[n+1];
+		for(int i = 0; i <= n; i++)
+			r[i] = - Integer.MAX_VALUE;
+		memoCutRodAux(p,n,r,s);
+		for(int j = 0; j <= n; j++){
+			System.out.print("n="+j+"r="+r[j]+":");
+			int k = j;
+			while(k > 0){
+				System.out.print(s[k]+"\t");
+				k -= s[k];
+			}
+			System.out.println();
+		}
+		
+		
+		
+	}
+
+	private static int memoCutRodAux(int[] p, int n, int[] r, int[] s) {
+		// TODO Auto-generated method stub
+		int q;
+		int val;
+		if(r[n] >= 0)
+			return r[n];
+		if(n == 0)
+			q = 0;
+		else{
+			q = -Integer.MAX_VALUE;
+			for(int i = 1; i <= n; i++){
+				val = memoCutRodAux(p, n-i, r, s);
+				if(q < p[i-1] + val){
+					q = p[i-1]+val;
+					s[n] = i;
+				}
+			}
+		}
+		r[n] = q;
+		return q;
+		
+	}
+	
+	
+	//bottom-up method
+	public static void bottomUpCutRpd(int[] p, int n){
+		int[] r = new int[n+1];
+		int[] s = new int[n+1];
+		extendedBottomUpCutRod(p,n,r,s);
+		for(int j = 0; j <= n; j++){
+			System.out.print("n="+j+"r="+r[j]+":");
+			int k = j;
+			while(k > 0){
+				System.out.print(s[k]+"\t");
+				k -= s[k];
+			}
+			System.out.println();
+		}
+	}
+
+	private static void extendedBottomUpCutRod(int[] p, int n, int[] r, int[] s) {
+		// TODO Auto-generated method stub
+		for(int j = 1; j <= n; j++){
+			int q = - Integer.MAX_VALUE;
+			for(int i = 1; i <= j; i++){
+				if(q < p[i-1] + r[j-i]){
+					q = p[i-1]+r[j-i];
+					s[j] = i;
+				}
+			}
+			r[j] = q;
+		}
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+
+}
