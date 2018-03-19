@@ -22,7 +22,12 @@
 
 [par4高级设计和分析技术][15]<br>
 [chap15动态规划][16]<br>
-[chap16贪心算法][17]<br>
+[chap16贪心算法][17]<br><br>
+
+part6图算法<br>
+[chap22基本的图算法][18]<br>
+[chap23最小生成树][19]<br>
+
 
 **to be continued**
 
@@ -44,6 +49,8 @@
   [15]: https://www.zybuluo.com/zqbinggong/note/1076893
   [16]: https://www.zybuluo.com/zqbinggong/note/1077191
   [17]: https://www.zybuluo.com/zqbinggong/note/1078168
+  [18]: https://www.zybuluo.com/zqbinggong/note/1079114
+  [19]: https://www.zybuluo.com/zqbinggong/note/1079575
   
   
   
