@@ -27,6 +27,8 @@
 part6图算法<br>
 [chap22基本的图算法][18]<br>
 [chap23最小生成树][19]<br>
+[chap24单源最短路径][20]<br>
+[chap25所有结点对的最短路径问题][21]<br>
 
 
 **to be continued**
@@ -51,8 +53,8 @@ part6图算法<br>
   [17]: https://www.zybuluo.com/zqbinggong/note/1078168
   [18]: https://www.zybuluo.com/zqbinggong/note/1079114
   [19]: https://www.zybuluo.com/zqbinggong/note/1079575
-  
-  
+  [20]: https://www.zybuluo.com/zqbinggong/note/1080641
+  [21]: https://www.zybuluo.com/zqbinggong/note/1080903
   
   
   
