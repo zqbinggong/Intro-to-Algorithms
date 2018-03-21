@@ -29,6 +29,7 @@ part6图算法<br>
 [chap23最小生成树][19]<br>
 [chap24单源最短路径][20]<br>
 [chap25所有结点对的最短路径问题][21]<br>
+[chap26最大流][22]<br>
 
 
 **to be continued**
@@ -55,7 +56,7 @@ part6图算法<br>
   [19]: https://www.zybuluo.com/zqbinggong/note/1079575
   [20]: https://www.zybuluo.com/zqbinggong/note/1080641
   [21]: https://www.zybuluo.com/zqbinggong/note/1080903
-  
+  [22]: https://www.zybuluo.com/zqbinggong/note/1081714
   
   
   
