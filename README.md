@@ -24,12 +24,15 @@
 [chap15动态规划][16]<br>
 [chap16贪心算法][17]<br><br>
 
-part6图算法<br>
+**part6图算法**<br>
 [chap22基本的图算法][18]<br>
 [chap23最小生成树][19]<br>
 [chap24单源最短路径][20]<br>
 [chap25所有结点对的最短路径问题][21]<br>
-[chap26最大流][22]<br>
+[chap26最大流][22]<br><br>
+
+**其他**
+[chap21用于不相交集合的数据结构][23]
 
 
 **to be continued**
@@ -57,7 +60,7 @@ part6图算法<br>
   [20]: https://www.zybuluo.com/zqbinggong/note/1080641
   [21]: https://www.zybuluo.com/zqbinggong/note/1080903
   [22]: https://www.zybuluo.com/zqbinggong/note/1081714
-  
+  [23]: https://www.zybuluo.com/zqbinggong/note/1082976
   
   
   
