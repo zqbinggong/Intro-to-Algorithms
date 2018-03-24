@@ -31,8 +31,9 @@
 [chap25所有结点对的最短路径问题][21]<br>
 [chap26最大流][22]<br><br>
 
-**其他**
-[chap21用于不相交集合的数据结构][23]
+**其他** <br>
+[chap21用于不相交集合的数据结构][23]<br>
+[自组织表][24]<br>
 
 
 **to be continued**
@@ -61,6 +62,7 @@
   [21]: https://www.zybuluo.com/zqbinggong/note/1080903
   [22]: https://www.zybuluo.com/zqbinggong/note/1081714
   [23]: https://www.zybuluo.com/zqbinggong/note/1082976
+  [24]: https://www.zybuluo.com/zqbinggong/note/1082976
   
   
   
